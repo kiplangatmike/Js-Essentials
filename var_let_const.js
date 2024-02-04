@@ -35,3 +35,16 @@ test();
 
 // -----------------------------------------------
 
+// Hoisting
+// when using var, we will get undefined but if we use const and let
+// we will get initialization error since yes they are hoisted but they are hoisted 
+// in the temporary dead zone, this means that yes the variables are there in the 
+// scope but they are yet to be initialised
+console.log(count);
+var count = 1;
+
+function abc() {
+    console.log(abc);
+    var abc = 4;
+}
+abc();
