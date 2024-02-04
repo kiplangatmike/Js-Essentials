@@ -63,3 +63,34 @@ const moreTwo = fil.myFilter((fi, i, arr) => {
     return fi > 2;
 })
 console.log("polyfil of filter:", moreTwo);
+
+// ------------------------------------------------------------------
+
+// polyfil for reducer();
+
+Array.prototype.myReduce = function (cb, initialValue) {
+    var accumulator = initialValue;
+    for (let i = 0; i < this.length; i++) {
+        accumulator = accumulator ? cb(accumulator, this[i], i, this) : this[i];
+    }
+    return accumulator
+}
+const myAcc = reducee.myReduce((acc, curr, i, arr) => {
+    return acc + curr;
+}, 0)
+console.log("polyfil of filter:", myAcc);
+
+// -------------------------------------------------------------------
+
+// map vs forEach
+// both are array functions to loop through an array
+// for map returns a new array while for each doesn't it just modifies the original array
+// you can chain other methods in map, but since forEach doesn't return anything, their is nothing to be chained
+const arr = [1,2,3,4]
+const mapResult = arr.map((ar) => {
+    return ar + 2;
+});
+const forEachResult = arr.forEach((ar, i) => {
+    arr[i] = ar + 3;
+});
+console.log("map vs forEach", mapResult, forEachResult, arr);
