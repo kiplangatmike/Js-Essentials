@@ -6,6 +6,7 @@ var a = 5;
 console.log(a)
 
 // ---------------------------------------
+
 // let and const is a block scope, it can only be accessed in the block, below is an example
 
 {
@@ -25,6 +26,7 @@ function test() {
     console.log(shadow);
 }
 test();
+
 // we cannot shadow let  by using var, this is called illigal shadowing
 
 // ---------------------------------------------

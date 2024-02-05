@@ -94,3 +94,42 @@ const forEachResult = arr.forEach((ar, i) => {
     arr[i] = ar + 3;
 });
 console.log("map vs forEach", mapResult, forEachResult, arr);
+
+// O/P based questions
+// question 1 return only the names of students in capital
+
+let studentss = [
+    {name: "a", roll: 32, marks: 70},
+    {name: "b", roll: 90, marks: 43},
+    {name: "c", roll: 41, marks: 67},
+    {name: "d", roll: 11, marks: 25}
+]
+
+let names = []
+for (let i = 0; i < studentss.length; i++) {
+    names.push(studentss[i].name.toUpperCase())
+    console.log(studentss[i])
+}
+console.log("for loop to capitalise names:", names)
+
+const studentsToUpper = studentss.map((student) => {
+    return student.name.toUpperCase();
+})
+console.log(studentsToUpper);
+
+// this is not possible
+const studentsForEach = studentss.forEach((student) => {
+    return student.name.toUpperCase();
+})
+console.log(studentsForEach);
+
+// -----------------------------------------------------------
+// quesiton 2 - return only details for those students who scored more than60
+
+const moreThan60 = [];
+for (let i = 0; i < studentss.length; i++) {
+    if (studentss[i].marks > 50) {
+        moreThan60.push(studentss)
+    }
+}
+console.log(moreThan60)
