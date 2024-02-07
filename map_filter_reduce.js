@@ -102,7 +102,6 @@ let studentss = [
     {name: "a", roll: 32, marks: 70},
     {name: "b", roll: 90, marks: 43},
     {name: "c", roll: 41, marks: 67},
-    {name: "d", roll: 11, marks: 25}
 ]
 
 let names = []
