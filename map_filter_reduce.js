@@ -95,6 +95,7 @@ const forEachResult = arr.forEach((ar, i) => {
 });
 console.log("map vs forEach", mapResult, forEachResult, arr);
 
+
 // O/P based questions
 // question 1 return only the names of students in capital
 
@@ -116,11 +117,13 @@ const studentsToUpper = studentss.map((student) => {
 })
 console.log(studentsToUpper);
 
+
 // this is not possible
 const studentsForEach = studentss.forEach((student) => {
     return student.name.toUpperCase();
 })
 console.log(studentsForEach);
+
 
 // -----------------------------------------------------------
 // quesiton 2 - return only details for those students who scored more than60
