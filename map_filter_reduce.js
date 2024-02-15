@@ -51,7 +51,6 @@ console.log(multiply);
 // --------------------------------------------------------------
 
 // polyfil for filter();
-
 Array.prototype.myFilter = function (cb) {
     let temp = []
     for (let i = 0; i < this.length; i++) {
@@ -65,9 +64,7 @@ const moreTwo = fil.myFilter((fi, i, arr) => {
 console.log("polyfil of filter:", moreTwo);
 
 // ------------------------------------------------------------------
-
 // polyfil for reducer();
-
 Array.prototype.myReduce = function (cb, initialValue) {
     var accumulator = initialValue;
     for (let i = 0; i < this.length; i++) {
