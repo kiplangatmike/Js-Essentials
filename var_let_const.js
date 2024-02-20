@@ -8,12 +8,10 @@ console.log(a)
 // ---------------------------------------
 
 // let and const is a block scope, it can only be accessed in the block, below is an example
-
 {
     let c = 5;
     console.log(c)
 }
-
 // -----------------------------------------
 // variable shadowing
 function test() {
