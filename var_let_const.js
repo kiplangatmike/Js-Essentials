@@ -28,6 +28,7 @@ function test() {
 test();
 
 // we cannot shadow let  by using var, this is called illigal shadowing
+
 // ---------------------------------------------
 // we can redeclare a variable using var in the same scope bit not let and const
 // when declaring const we need to initialize it with some value as opposed to var and let
@@ -35,6 +36,7 @@ test();
 
 // -----------------------------------------------
 // Hoisting
+
 // when using var, we will get undefined but if we use const and let
 // we will get initialization error since yes they are hoisted but they are hoisted 
 // in the temporary dead zone, this means that yes the variables are there in the 
