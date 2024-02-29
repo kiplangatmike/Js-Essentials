@@ -30,11 +30,13 @@ test();
 // we cannot shadow let  by using var, this is called illigal shadowing
 
 // ---------------------------------------------
+
 // we can redeclare a variable using var in the same scope bit not let and const
 // when declaring const we need to initialize it with some value as opposed to var and let
 // we can reinitialize a value in let and var but not const
 
 // -----------------------------------------------
+
 // Hoisting
 
 // when using var, we will get undefined but if we use const and let
