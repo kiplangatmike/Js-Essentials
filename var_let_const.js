@@ -13,6 +13,7 @@ console.log(a)
     let c = 5;
     console.log(c)
 }
+
 // -----------------------------------------
 
 // variable shadowing
