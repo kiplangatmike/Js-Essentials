@@ -9,8 +9,7 @@ const getParam = () => {
 
 getParam();
 
-// ----------------------------------------------------------------------
-
+// ------------------------------------------------------------------------
 let user = {
     name: "Mike",
     age: 24,
@@ -23,7 +22,6 @@ let user = {
 user.getDetails();
 
 // ------------------------------------------------------------------------
-
 // what if it was further nested?
 // normal function only access the immediate object, it doesn't go further
 // the example below, we will only get the new name, the other will be undefined
