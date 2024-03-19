@@ -114,8 +114,7 @@ const studentsToUpper = studentss.map((student) => {
 })
 console.log(studentsToUpper);
 
-
-// this is not possible
+// this is not possible..
 const studentsForEach = studentss.forEach((student) => {
     return student.name.toUpperCase();
 })
